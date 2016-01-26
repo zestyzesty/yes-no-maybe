@@ -1,5 +1,5 @@
 require "spec_helper"
-require "mongoid_helper"
+require "helpers/mongoid_helper"
 
 module YesNoMaybe
   describe MongoExt do

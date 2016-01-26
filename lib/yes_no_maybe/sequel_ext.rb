@@ -1,3 +1,4 @@
+# coding: utf-8
 module YesNoMaybe
   module SequelExt
     extend ActiveSupport::Concern
@@ -9,7 +10,7 @@ module YesNoMaybe
 
         define_method(field_name) do
           column_val = same_name ? super() : send(column_name)
-          column_val.try(:to_sym) || :maybe
+          column_val.nil? ? :maybe : column_val.to_sym
         end
 
         define_method("#{field_name}=") do |val|

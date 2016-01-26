@@ -1,5 +1,5 @@
 require "spec_helper"
-require "sequel_helper"
+require "helpers/sequel_helper"
 
 module YesNoMaybe
   describe SequelExt do
@@ -15,7 +15,6 @@ module YesNoMaybe
       let(:obj) { YesNoMaybeTestObj.new }
 
       it "initializes to maybe" do
-        byebug
         expect(obj.contains_oomph?).to be false
         expect(obj.contains_oomph_yes?).to be false
         expect(obj.contains_oomph_maybe?).to be true
