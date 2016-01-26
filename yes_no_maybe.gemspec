@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Warren W. Kretzschmar"]
   spec.email         = ["wkretzsch@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Yes/No/Maybe: When a boolean just isn't enough.}
+  spec.homepage      = "https://github.com/zestyzesty/yes_no_maybe.git"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -33,5 +32,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.1'
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.11'
-#  spec.add_development_dependency 'activerecord', '~> 4.2', '>= 4.2.5'
 end
